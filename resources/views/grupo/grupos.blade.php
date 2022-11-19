@@ -9,7 +9,9 @@
             <thead>
                 <th>ID</th>
                 <th>Clave</th>
+                <th>Especialidad</th>
                 <th>Descripcion</th>
+                <th>Semestre</th>
                 <th>Turno</th>
                 <th>Opciones</th>
             </thead>
@@ -18,7 +20,9 @@
                 <tr>
                     <td>{{ $a->id}}</td>
                     <td>{{ $a->clave}}</td>
+                    <td>{{ $a->especialidad_id}}</td>
                     <td>{{ $a->descripcion}}</td>
+                    <td>{{ $a->semestre}}</td>
                     <td>{{ $a->turno}}</td>
                     <td>
                         <a href="{{url('/grupo/editarGrupo')}}/{{$a->id}}" class="btn btn-primary btn-sm">Editar</a>
